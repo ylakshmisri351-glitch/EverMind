@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EverMind - AI Memory Agent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header class="header">
+            <div>
+                <h1>EverMind</h1>
+                <p>AI Customer Support with Memory</p>
+            </div>
+
+            <div class="status">
+                <span class="status-dot"></span>
+                Hindsight Connected
+            </div>
+        </header>
+
+        <main class="main">
+
+            <section class="chat-section">
+
+                <div class="chat-header">
+                    <div>
+                        <h2>Customer Support</h2>
+                        <p>EverMind remembers previous conversations</p>
+                    </div>
+                </div>
+
+                <div id="chatMessages" class="chat-messages">
+
+                    <div class="message assistant">
+                        <div class="avatar">E</div>
+                        <div class="bubble">
+                            Hello! I'm EverMind. How can I help you today?
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="input-area">
+                    <input
+                        type="text"
+                        id="messageInput"
+                        placeholder="Type your message..."
+                        autocomplete="off"
+                    >
+
+                    <button id="sendButton">
+                        Send
+                    </button>
+                </div>
+
+            </section>
+
+            <aside class="memory-section">
+
+                <div class="memory-header">
+                    <h2>Hindsight Memory</h2>
+                    <span id="memoryCount">0</span>
+                </div>
+
+                <p class="memory-description">
+                    Memories recalled for this conversation
+                </p>
+
+                <div id="memoryList" class="memory-list">
+
+                    <div class="empty-memory">
+                        No memories recalled yet.
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
